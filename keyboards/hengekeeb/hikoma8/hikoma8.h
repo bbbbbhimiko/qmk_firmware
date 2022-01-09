@@ -14,16 +14,16 @@
  * represents the switch matrix.
  */
 #define LAYOUT( \
-    k00, \
-    k11, \
-    k22, \
-    k33, \
-    k44, \
-    k55, \
-    k66, \
-    k77, \
-    k88 \
+    k00, k22, k44, k66, k88, \
+    k11, k33, k55, k77 \
 ) { \
-    { k00, k22, k44, k66, k88 }, \
-    { k11, k33, k55, k77 } \
+    { k00, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, }, \
+    { KC_NO, k11, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, }, \
+    { KC_NO, KC_NO, k22, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, }, \
+    { KC_NO, KC_NO, KC_NO, k33, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, }, \
+    { KC_NO, KC_NO, KC_NO, KC_NO, k44, KC_NO, KC_NO, KC_NO, KC_NO, }, \
+    { KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, k55, KC_NO, KC_NO, KC_NO, }, \
+    { KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, k66, KC_NO, KC_NO, }, \
+    { KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, k77, KC_NO, }, \
+    { KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, k88, } \
 }
