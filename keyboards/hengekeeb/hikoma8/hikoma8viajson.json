@@ -1,0 +1,14 @@
+{
+    "name": "hikoma8",
+    "vendorId": "0x5B13",
+    "productId": "0xB5A1",
+    "lighting": "none",
+    "matrix": { "rows": 9, "cols": 9 },
+    "layouts": {
+      "keymap": [
+        ["0,0","0,1","0,2","0,3",{"c":"#aaaaaa","w":1.5},"0,4"],
+        [{"c":"#cccccc","w":1.25},"1,0","1,1","1,2",{"w":2.25},"1,3"]
+        ]
+      
+    }
+  }
